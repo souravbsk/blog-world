@@ -51,6 +51,10 @@
 
 
 @media only screen and (min-device-width: 576px) and (max-device-width: 992px) {
+   header{
+    padding: 0 20px;
+
+   }
     .nav-bar{
         flex-direction: column;
     }
@@ -61,6 +65,10 @@
 }
 
 @media only screen and (max-width: 576px) {
+    header{
+        padding: 0 10px;
+    
+       }
     .nav-bar{
         flex-direction: column;
         gap: 20px;
