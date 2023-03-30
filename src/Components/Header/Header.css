@@ -1,0 +1,39 @@
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.15);;
+
+}
+.nav-brand{
+    font-family: 'Exo 2';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 160%;
+
+color: #111111;
+}
+
+.nav-bar-item{
+    display: flex;
+    align-items: center;
+}
+.nav-bar-item .nav-item{
+    list-style: none;
+}
+.nav-item .user-logo{
+    max-width: 100%;
+    width: 45px;
+    height: 40px;
+    object-fit: fill;
+    border-radius: 50%;
+}
+.nav-item .nav-link{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px;
+}
