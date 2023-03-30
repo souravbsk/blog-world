@@ -1,0 +1,108 @@
+.card {
+    max-width: 100%;
+    width: 845px;
+    padding: 35px 0;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+}
+
+.card-img{
+    border-radius: 8px;
+    overflow: hidden;
+    height: 450px;
+    width: 100%;
+}
+.card-img img {
+    width: 100%;
+}
+
+.card-content {
+    margin-top: 30px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.author-content {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.author-img img {
+    border-radius: 50%;
+    max-width: 100%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.author-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.author-date {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(17, 17, 17, 0.6);
+    margin-top: 5px;
+}
+
+.read-time {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(17, 17, 17, 0.6);
+}
+
+.timeAndBookmark {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.bookmark-btn {
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.card-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    color: #111111;
+}
+
+.card-tag {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(17, 17, 17, 0.6);
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.mark-read-btn {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #6047EC;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 20px;
+}

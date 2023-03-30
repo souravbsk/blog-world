@@ -1,0 +1,43 @@
+.main-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.blogCard-container {
+    padding: 0 25px;
+}
+.blogHistory-container{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.timeOnRead {
+    padding: 20px 30px;
+    background: rgba(96, 71, 236, 0.1);
+    border: 1px solid #6047EC;
+    border-radius: 8px;
+    margin: 35px 0;
+}
+
+.timeOnRead-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #6047EC;
+    text-align: center;
+}
+
+.bookMarkHistory {
+    padding: 30px;
+    background: rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+    
+}
+
+.bookMarkHistoryTitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 160%;
+    color: #111111;
+}
