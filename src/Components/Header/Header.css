@@ -1,39 +1,76 @@
-.nav-bar{
+.nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 0;
-    border-bottom: 1px solid rgba(17, 17, 17, 0.15);;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.15);
+    ;
 
 }
-.nav-brand{
+
+.nav-brand {
     font-family: 'Exo 2';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 160%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 160%;
 
-color: #111111;
+    color: #111111;
 }
 
-.nav-bar-item{
+.nav-bar-item {
     display: flex;
     align-items: center;
 }
-.nav-bar-item .nav-item{
+
+.nav-bar-item .nav-item {
     list-style: none;
 }
-.nav-item .user-logo{
+
+.nav-item .user-logo {
+    border-radius: 50%;
     max-width: 100%;
     width: 60px;
     height: 60px;
-    object-fit: fill;
-    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
 }
-.nav-item .nav-link{
+
+.nav-item .nav-link {
     text-decoration: none;
     color: black;
     font-size: 18px;
     font-weight: 500;
     padding: 20px;
+}
+
+
+
+
+/* responsive  */
+
+
+@media only screen and (min-device-width: 576px) and (max-device-width: 992px) {
+    .nav-bar{
+        flex-direction: column;
+    }
+    .nav-item .nav-link{
+        padding: 12px;
+    }
+   
+}
+
+@media only screen and (max-width: 576px) {
+    .nav-bar{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .nav-bar-item{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-item .nav-link{
+        padding: 12px;
+    }
+   
 }

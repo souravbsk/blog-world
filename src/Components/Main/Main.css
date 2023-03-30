@@ -4,7 +4,7 @@
 }
 
 .blogCard-container {
-    padding: 0 25px;
+   padding-right: 25px;
 }
 .blogHistory-container{
     position: sticky;
@@ -41,3 +41,40 @@
     line-height: 160%;
     color: #111111;
 }
+
+
+
+
+
+@media only screen and (min-device-width: 576px) and (max-device-width: 992px) {
+    .main-section {
+        grid-template-columns:1fr;
+    }
+    .blogCard-container{
+        padding: 0;
+    }
+
+    .blogCard-container{
+        padding: 0 20px;
+    }
+    .blogHistory-container{
+        padding: 0 20px;
+    }
+
+}
+@media only screen and (max-width: 576px){
+    .main-section {
+        grid-template-columns: 1fr;
+        grid-gap:20px ;
+    }
+    .bookMarkHistoryTitle{
+        text-align: center;
+    }
+    .blogCard-container{
+        padding: 0 10px;
+    }
+    .blogHistory-container{
+        padding: 0 10px;
+    }
+}
+

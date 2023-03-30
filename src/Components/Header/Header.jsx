@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import userLogo from "../../assets/img/user..jpg"
+import userLogo from "../../assets/img/user..jpg";
 
 const Header = () => {
   return (
@@ -31,7 +31,9 @@ const Header = () => {
             </a>
           </li>
           <li className="nav-item">
-            <img className="user-logo" src={userLogo} alt="" />
+            <div>
+              <img className="user-logo" src={userLogo} alt="" />
+            </div>
           </li>
         </ul>
       </nav>
