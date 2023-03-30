@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./SingleBlogItem.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark, faCheck } from "@fortawesome/free-solid-svg-icons";
-const SingleBlogItem = ({ blog, handleBookMark,handleTimeOnRead }) => {
-  
+const SingleBlogItem = ({ blog, handleBookMark, handleTimeOnRead }) => {
   const {
     id,
     image,
@@ -14,12 +13,7 @@ const SingleBlogItem = ({ blog, handleBookMark,handleTimeOnRead }) => {
     authorImg,
     ReadTime,
   } = blog;
-  const [isBookMark, setBookMarked] = useState(false);
 
-  const handleBlogBookMark = () => {
-    handleBookMark(title)
-    setBookMarked(true)
-  }
   return (
     <div className="card">
       <figure className="card-img">
@@ -38,10 +32,11 @@ const SingleBlogItem = ({ blog, handleBookMark,handleTimeOnRead }) => {
           </div>
           <div className="timeAndBookmark">
             <p className="read-time">{ReadTime} min read</p>
-            <button onClick={handleBlogBookMark} className="bookmark-btn">
-              {isBookMark ? <FontAwesomeIcon icon={faCheck} /> :
-                <FontAwesomeIcon icon={faBookmark} />
-               }
+            <button
+              onClick={() => handleBookMark(title)}
+              className="bookmark-btn"
+            >
+              <FontAwesomeIcon icon={faBookmark} />
             </button>
           </div>
         </div>
@@ -49,10 +44,15 @@ const SingleBlogItem = ({ blog, handleBookMark,handleTimeOnRead }) => {
           <h3 className="card-title">{title}</h3>
           <div className="card-tag">
             {tag.map((item, i) => (
-              <span key={i}>#{item}</span>
+              <span key={i}>#{item},</span>
             ))}
           </div>
-          <button onClick={() => handleTimeOnRead(ReadTime)} className="mark-read-btn">Mark as read</button>
+          <button
+            onClick={() => handleTimeOnRead(ReadTime)}
+            className="mark-read-btn"
+          >
+            Mark as read
+          </button>
         </div>
       </div>
     </div>
