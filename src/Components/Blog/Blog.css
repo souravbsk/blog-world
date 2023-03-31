@@ -1,3 +1,6 @@
+.blog{
+    margin-bottom: 50px;
+}
 .Qa-title{
     text-align: center;
     font-size: 30px;
@@ -11,3 +14,23 @@
 .articleDiv{
     margin-bottom: 20px;
 }
+
+
+
+
+/* responsive  */
+
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+    .blog{
+        padding: 0 20px;
+    }
+    
+ }
+ 
+ @media only screen and (max-width: 576px) {
+   
+    .blog{
+        padding: 0 10px;
+    }
+ }
