@@ -63,7 +63,8 @@ const Blog = () => {
           element. but if we need to changed dom element. then we can use
           useEffect and easily change the element, also if we need to connect
           our website to third party any side then we can do this using
-          useEffect;
+          useEffect; we can clear setinterval settimeout function clear with
+          useEffect. and also show localStorage data using usingEffect.
         </p>
       </article>
       <article className="articleDiv">
@@ -74,17 +75,17 @@ const Blog = () => {
           which is html syntactic sugar. when we write jsx . react have a
           special compiler which is called babel. babel compiled jsx to react
           element. and finally render it browser. react haas their own dom which
-          is called virtual dom .virtual dom is a soft copy of normal dom when we
-          run our code the browser. make all element to create a dom tree. and
-          also react create their own virtual dom same to same. virtual dom is
-          simple and cleaner but much batter and faster then real dom. that's why
-          when we need to change dom specific any element we can change easily
-          but it can't any effect real dom because real dom only one time render in
-          react . but behind the scene the element change in virtual dom only.
-          and virtual dom find and compare with real dom which content has been
-          changed. after compare and finally just update specific changed
-          element in real dom . this comparing done by mainly through response
-          diff. algorithm.This is how react works
+          is called virtual dom .virtual dom is a soft copy of normal dom when
+          we run our code the browser. make all element to create a dom tree.
+          and also react create their own virtual dom same to same. virtual dom
+          is simple and cleaner but much batter and faster then real dom. that's
+          why when we need to change dom specific any element we can change
+          easily but it can't any effect real dom because real dom only one time
+          render in react . but behind the scene the element change in virtual
+          dom only. and virtual dom find and compare with real dom which content
+          has been changed. after compare and finally just update specific
+          changed element in real dom . this comparing done by mainly through
+          response diff. algorithm.This is how react works
         </p>
       </article>
     </section>
