@@ -44,7 +44,7 @@ const Main = () => {
       setBookMarkBlog(getLocalStoreData);
     }
     if (getStoreReadValue) {
-      setReadTime(getStoreReadValue);
+      setReadTime(JSON.parse(getStoreReadValue));
     }
   }, []);
 

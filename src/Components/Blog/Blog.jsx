@@ -25,7 +25,7 @@ const Blog = () => {
           changed depending on user action. we can easily do this type work
           using state. state can be modify. The value of state changes can be
           asynchronous way. all code are run synchronous way.but state value
-          update asynchronous way. we can pass the state value in props.
+          update asynchronous way. we can pass the state value with props.
         </p>
       </article>
       <article className="articleDiv">
@@ -74,12 +74,12 @@ const Blog = () => {
           which is html syntactic sugar. when we write jsx . react have a
           special compiler which is called babel. babel compiled jsx to react
           element. and finally render it browser. react haas their own dom which
-          is called virtual .virtual dom is a soft copy of normal dom when we
+          is called virtual dom .virtual dom is a soft copy of normal dom when we
           run our code the browser. make all element to create a dom tree. and
           also react create their own virtual dom same to same. virtual dom is
-          simple and cleaner but much batter and faster then real dom. that why
+          simple and cleaner but much batter and faster then real dom. that's why
           when we need to change dom specific any element we can change easily
-          but it can't effect real dom because real dom only one time render in
+          but it can't any effect real dom because real dom only one time render in
           react . but behind the scene the element change in virtual dom only.
           and virtual dom find and compare with real dom which content has been
           changed. after compare and finally just update specific changed
