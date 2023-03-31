@@ -1,6 +1,7 @@
 .main-section {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    margin-bottom: 50px;
 }
 
 .blogCard-container {
@@ -9,7 +10,6 @@
 .blogHistory-container{
     position: sticky;
     top: 0;
-    height: 100vh;
 }
 
 .timeOnRead {
@@ -31,7 +31,6 @@
     padding: 30px;
     background: rgba(17, 17, 17, 0.05);
     border-radius: 8px;
-    height: 100vh;
     
 }
 
